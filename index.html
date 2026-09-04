@@ -38,15 +38,100 @@
   <div class="card"><div class="icon">📚</div><h3>PDF / Notes</h3><p>जरूरी किताबें और नोट्स डाउनलोड करें।</p><a href="#pdfs">देखें →</a></div>
 </section>
 
-<section id="students" class="section">
-  <span class="eyebrow">STUDENTS</span><h2>विद्यार्थियों की सूची</h2>
-  <input id="studentSearch" class="search" placeholder="🔍 विद्यार्थी का नाम खोजें..." oninput="filterStudents()">
-  <div class="table-wrap"><table id="studentTable"><thead><tr><th>क्रम</th><th>नाम</th><th>कक्षा</th></tr></thead>
-  <tbody>
-    <tr><td>1</td><td>विद्यार्थी का नाम</td><td>साल دوم</td></tr>
-    <tr><td>2</td><td>विद्यार्थी का नाम</td><td>साल اول</td></tr>
-    <tr><td>3</td><td>विद्यार्थी का नाम</td><td>ابتدائیہ</td></tr>
-  </tbody></table></div>
+<<section id="students" class="section">
+  <span class="eyebrow">STUDENTS</span>
+  <h2>طلبہ کی فہرست</h2>
+
+  <input id="studentSearch"
+         type="search"
+         placeholder="نام، کلاس یا رول نمبر تلاش کریں..."
+         oninput="filterStudents()">
+
+  <div class="table-wrap">
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <th>क्रम</th>
+          <th>نام</th>
+          <th>کلاس</th>
+          <th>رول نمبر</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr><td>1</td><td>محمد خان</td><td>اولیٰ عصری</td><td>2026-6405</td></tr>
+        <tr><td>2</td><td>عارف خان</td><td>اولیٰ عصری</td><td>2026-6407</td></tr>
+        <tr><td>3</td><td>بابا خان</td><td>اولیٰ عصری</td><td>2026-6408</td></tr>
+        <tr><td>4</td><td>منظور دین</td><td>اولیٰ عصری</td><td>2026-6409</td></tr>
+        <tr><td>5</td><td>صدیق خان</td><td>اولیٰ عصری</td><td>2026-6410</td></tr>
+        <tr><td>6</td><td>محمد رفیق</td><td>اولیٰ عصری</td><td>2026-6411</td></tr>
+        <tr><td>7</td><td>محمد رفیق</td><td>اولیٰ عصری</td><td>2026-6412</td></tr>
+        <tr><td>8</td><td>اصغر</td><td>اولیٰ عصری</td><td>2026-6413</td></tr>
+        <tr><td>9</td><td>سبحان</td><td>اولیٰ عصری</td><td>2026-6414</td></tr>
+        <tr><td>10</td><td>ناجون خان</td><td>اولیٰ عصری</td><td>2026-6415</td></tr>
+        <tr><td>11</td><td>سلیم خان</td><td>اولیٰ عصری</td><td>2026-6416</td></tr>
+        <tr><td>12</td><td>اریان</td><td>اولیٰ عصری</td><td>2026-6417</td></tr>
+        <tr><td>13</td><td>ذیشان احمد</td><td>اولیٰ عصری</td><td>2026-6418</td></tr>
+        <tr><td>14</td><td>صدام خان</td><td>اولیٰ عصری</td><td>2026-6419</td></tr>
+
+        <tr><td>15</td><td>قائم الدین</td><td>ثانویہ عصری</td><td>2026-5862</td></tr>
+        <tr><td>16</td><td>محمد شفیع</td><td>ثانویہ عصری</td><td>2026-5866</td></tr>
+        <tr><td>17</td><td>شوکت علی</td><td>ثانویہ عصری</td><td>2026-5870</td></tr>
+        <tr><td>18</td><td>عطاء اللہ</td><td>ثانویہ عصری</td><td>2026-5874</td></tr>
+        <tr><td>19</td><td>آدم خان</td><td>ثانویہ عصری</td><td>2026-5877</td></tr>
+        <tr><td>20</td><td>احمد خان</td><td>ثانویہ عصری</td><td>2026-5880</td></tr>
+        <tr><td>21</td><td>اسلام خان</td><td>ثانویہ عصری</td><td>2026-5883</td></tr>
+        <tr><td>22</td><td>مشتاق خان</td><td>ثانویہ عصری</td><td>2026-5886</td></tr>
+        <tr><td>23</td><td>عثمان غنی</td><td>ثانویہ عصری</td><td>2026-5889</td></tr>
+        <tr><td>24</td><td>ناصر علی</td><td>ثانویہ عصری</td><td>2026-5892</td></tr>
+        <tr><td>25</td><td>انس</td><td>ثانویہ عصری</td><td>2026-5895</td></tr>
+
+        <tr><td>26</td><td>سکندر</td><td>اول متوسطہ</td><td>2026-4991</td></tr>
+        <tr><td>27</td><td>اشفاق حسین</td><td>اول متوسطہ</td><td>2026-4999</td></tr>
+        <tr><td>28</td><td>نزارک خان</td><td>اول متوسطہ</td><td>2026-5006</td></tr>
+        <tr><td>29</td><td>اکرام الدین</td><td>اول متوسطہ</td><td>2026-5014</td></tr>
+        <tr><td>30</td><td>اویس خان</td><td>اول متوسطہ</td><td>2026-5021</td></tr>
+        <tr><td>31</td><td>حسین خان</td><td>اول متوسطہ</td><td>2026-5028</td></tr>
+        <tr><td>32</td><td>فیروز خان</td><td>اول متوسطہ</td><td>2026-5035</td></tr>
+        <tr><td>33</td><td>نورے خان</td><td>اول متوسطہ</td><td>2026-5042</td></tr>
+        <tr><td>34</td><td>مجیب خان</td><td>اول متوسطہ</td><td>2026-5049</td></tr>
+        <tr><td>35</td><td>نظیر خان</td><td>اول متوسطہ</td><td>2026-5056</td></tr>
+        <tr><td>36</td><td>عقیل خان</td><td>اول متوسطہ</td><td>2026-5062</td></tr>
+        <tr><td>37</td><td>مراد علی</td><td>اول متوسطہ</td><td>2026-5067</td></tr>
+        <tr><td>38</td><td>احسان خان</td><td>اول متوسطہ</td><td>2026-5072</td></tr>
+        <tr><td>39</td><td>برکت خان</td><td>اول متوسطہ</td><td>2026-5077</td></tr>
+        <tr><td>40</td><td>عمران خان</td><td>اول متوسطہ</td><td>2026-5082</td></tr>
+        <tr><td>41</td><td>شے خان</td><td>اول متوسطہ</td><td>2026-5086</td></tr>
+        <tr><td>42</td><td>علم الدین</td><td>اول متوسطہ</td><td>2026-5089</td></tr>
+        <tr><td>43</td><td>ساکن خان</td><td>اول متوسطہ</td><td>2026-5092</td></tr>
+        <tr><td>44</td><td>گھنے خان</td><td>اول متوسطہ</td><td>2026-5095</td></tr>
+        <tr><td>45</td><td>غلام حسین</td><td>اول متوسطہ</td><td>2026-5097</td></tr>
+
+        <tr><td>46</td><td>ممتاز خان</td><td>دوم متوسطہ</td><td>2026-6075</td></tr>
+        <tr><td>47</td><td>انور خان</td><td>دوم متوسطہ</td><td>2026-6081</td></tr>
+        <tr><td>48</td><td>ارمان خان</td><td>دوم متوسطہ</td><td>2026-6087</td></tr>
+        <tr><td>49</td><td>رفیق خان</td><td>دوم متوسطہ</td><td>2026-6093</td></tr>
+        <tr><td>50</td><td>اشفاق حسین</td><td>دوم متوسطہ</td><td>2026-6099</td></tr>
+        <tr><td>51</td><td>ولید خان</td><td>دوم متوسطہ</td><td>2026-6105</td></tr>
+        <tr><td>52</td><td>جمعہ خان</td><td>دوم متوسطہ</td><td>2026-6111</td></tr>
+        <tr><td>53</td><td>حسین خان</td><td>دوم متوسطہ</td><td>2026-6117</td></tr>
+        <tr><td>54</td><td>شعیب خان</td><td>دوم متوسطہ</td><td>2026-6122</td></tr>
+        <tr><td>55</td><td>عارف خان</td><td>دوم متوسطہ</td><td>2026-6126</td></tr>
+        <tr><td>56</td><td>انیس</td><td>دوم متوسطہ</td><td>2026-6130</td></tr>
+        <tr><td>57</td><td>رفیق خان</td><td>دوم متوسطہ</td><td>2026-6133</td></tr>
+        <tr><td>58</td><td>اقبال خان</td><td>دوم متوسطہ</td><td>2026-6136</td></tr>
+        <tr><td>59</td><td>حارث</td><td>دوم متوسطہ</td><td>2026-6139</td></tr>
+        <tr><td>60</td><td>محبوب</td><td>دوم متوسطہ</td><td>2026-6142</td></tr>
+        <tr><td>61</td><td>اشرف خان</td><td>دوم متوسطہ</td><td>2026-6145</td></tr>
+        <tr><td>62</td><td>شہید عالم</td><td>دوم متوسطہ</td><td>2026-6148</td></tr>
+        <tr><td>63</td><td>اویب خان</td><td>دوم متوسطہ</td><td>2026-6151</td></tr>
+        <tr><td>64</td><td>جمیل اختر</td><td>دوم متوسطہ</td><td>2026-6154</td></tr>
+        <tr><td>65</td><td>عبدالخان</td><td>دوم متوسطہ</td><td>2026-6157</td></tr>
+
+      </tbody>
+    </table>
+  </div>
 </section>
 
 <section id="result" class="section alt">
