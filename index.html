@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jamiatul Madina Bandhewa</title>
+<meta name="description" content="Jamiatul Madina Bandhewa - Faizane Gulshan-e-Mustafa">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="badge">JAMIATUL MADINA</div>
+  <h1>BANDHEWA</h1>
+  <p>Faizane Gulshan-e-Mustafa</p>
+  <div class="hero-actions">
+    <a href="#students">विद्यार्थी</a>
+    <a href="#result">रिजल्ट</a>
+    <a href="#notices">नोटिस</a>
+  </div>
+</header>
+
+<nav class="nav">
+  <a href="#home">होम</a><a href="#students">विद्यार्थी</a><a href="#result">रिजल्ट</a>
+  <a href="#attendance">गैरहाजिरी</a><a href="#pdfs">PDF</a><a href="#notices">नोटिस</a>
+</nav>
+
+<main id="home">
+<section class="welcome section">
+  <span class="eyebrow">WELCOME</span>
+  <h2>Jamiatul Madina Bandhewa में आपका स्वागत है</h2>
+  <p>यह वेबसाइट विद्यार्थियों, परीक्षा परिणाम, गैरहाजिरी, PDF और महत्वपूर्ण नोटिस के लिए तैयार की गई है।</p>
+</section>
+
+<section class="cards section">
+  <div class="card"><div class="icon">👨‍🎓</div><h3>विद्यार्थी</h3><p>विद्यार्थियों की सूची देखें और नाम से खोजें।</p><a href="#students">देखें →</a></div>
+  <div class="card"><div class="icon">📊</div><h3>Result</h3><p>कक्षा और परीक्षा के परिणाम देखें।</p><a href="#result">देखें →</a></div>
+  <div class="card"><div class="icon">❌</div><h3>गैरहाजिरी</h3><p>गैरहाजिर विद्यार्थियों की सूची।</p><a href="#attendance">देखें →</a></div>
+  <div class="card"><div class="icon">📚</div><h3>PDF / Notes</h3><p>जरूरी किताबें और नोट्स डाउनलोड करें।</p><a href="#pdfs">देखें →</a></div>
+</section>
+
+<section id="students" class="section">
+  <span class="eyebrow">STUDENTS</span><h2>विद्यार्थियों की सूची</h2>
+  <input id="studentSearch" class="search" placeholder="🔍 विद्यार्थी का नाम खोजें..." oninput="filterStudents()">
+  <div class="table-wrap"><table id="studentTable"><thead><tr><th>क्रम</th><th>नाम</th><th>कक्षा</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>विद्यार्थी का नाम</td><td>साल دوم</td></tr>
+    <tr><td>2</td><td>विद्यार्थी का नाम</td><td>साल اول</td></tr>
+    <tr><td>3</td><td>विद्यार्थी का नाम</td><td>ابتدائیہ</td></tr>
+  </tbody></table></div>
+</section>
+
+<section id="result" class="section alt">
+  <span class="eyebrow">RESULT</span><h2>परीक्षा परिणाम</h2>
+  <div class="notice-box">यहाँ परीक्षा का परिणाम जोड़ा जाएगा। विद्यार्थी का नाम, कक्षा और अंक डालकर परिणाम दिखाया जा सकता है।</div>
+  <div class="table-wrap"><table><thead><tr><th>नाम</th><th>कक्षा</th><th>कुल अंक</th><th>ग्रेड</th></tr></thead>
+  <tbody><tr><td>उदाहरण विद्यार्थी</td><td>साल دوم</td><td>—</td><td>—</td></tr></tbody></table></div>
+</section>
+
+<section id="attendance" class="section">
+  <span class="eyebrow">ATTENDANCE</span><h2>गैरहाजिर विद्यार्थियों की सूची</h2>
+  <div class="notice-box">तारीख के अनुसार गैरहाजिर विद्यार्थियों की सूची यहाँ दिखाई जाएगी।</div>
+  <div class="table-wrap"><table><thead><tr><th>क्रम</th><th>नाम</th><th>तारीख</th><th>कक्षा</th></tr></thead>
+  <tbody><tr><td>1</td><td>उदाहरण विद्यार्थी</td><td>17/08/2026</td><td>—</td></tr></tbody></table></div>
+</section>
+
+<section id="pdfs" class="section alt">
+  <span class="eyebrow">PDF & NOTES</span><h2>किताबें और नोट्स</h2>
+  <div class="pdf-grid">
+    <a class="pdf" href="#" onclick="return noPdf()"><b>📄 बहارِ شریعت</b><span>PDF देखें / डाउनलोड करें</span></a>
+    <a class="pdf" href="#" onclick="return noPdf()"><b>📄 तफ्सीरे अहमदिया</b><span>PDF देखें / डाउनलोड करें</span></a>
+    <a class="pdf" href="#" onclick="return noPdf()"><b>📄 परीक्षा नोट्स</b><span>PDF देखें / डाउनलोड करें</span></a>
+  </div>
+</section>
+
+<section id="notices" class="section">
+  <span class="eyebrow">NOTICE</span><h2>महत्वपूर्ण नोटिस</h2>
+  <div class="notice-list">
+    <article><span>04 SEP 2026</span><h3>वेबसाइट प्रारंभ</h3><p>Jamiatul Madina Bandhewa की ऑनलाइन वेबसाइट तैयार की गई है।</p></article>
+    <article><span>NEW</span><h3>परीक्षा परिणाम</h3><p>नए परिणाम यहाँ प्रकाशित किए जाएंगे।</p></article>
+  </div>
+</section>
+</main>
+
+<footer>
+  <h3>JAMIATUL MADINA BANDHEWA</h3>
+  <p>Faizane Gulshan-e-Mustafa</p>
+  <p class="small">© 2026 Jamiatul Madina Bandhewa</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

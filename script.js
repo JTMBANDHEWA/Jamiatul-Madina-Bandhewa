@@ -1,0 +1,2 @@
+function filterStudents(){const q=document.getElementById("studentSearch").value.trim().toLowerCase();document.querySelectorAll("#studentTable tbody tr").forEach(r=>{r.style.display=r.innerText.toLowerCase().includes(q)?"":"none"})}
+function noPdf(){alert("अभी PDF नहीं जोड़ी गई है। अपनी PDF को pdfs फोल्डर में डालकर इस लिंक को बदलें।");return false}
